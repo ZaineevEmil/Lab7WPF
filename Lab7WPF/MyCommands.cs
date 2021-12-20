@@ -13,9 +13,8 @@ namespace Lab7WPF
 
         static MyCommands()
         {
-            InputGestureCollection inputs = new InputGestureCollection();
-            inputs.Add(new KeyGesture(Key.B, ModifierKeys.Control, "Ctrl+B"));
-            Color = new RoutedCommand("Color", typeof(MyCommands), inputs);
+           
+            Color = new RoutedCommand("Color", typeof(MyCommands));
         }
 
     }
